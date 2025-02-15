@@ -16,6 +16,11 @@
 			path = SpacedOut;
 			sourceTree = "<group>";
 		};
+		B57515E22D60901200768CBD /* Preview Content */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				B57515CD2D60875D00768CBD /* SpacedOut */,
+				B57515E22D60901200768CBD /* Preview Content */,
 				B57515CC2D60875D00768CBD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +68,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				B57515CD2D60875D00768CBD /* SpacedOut */,
+				B57515E22D60901200768CBD /* Preview Content */,
 			);
 			name = SpacedOut;
 			packageProductDependencies = (
@@ -85,7 +92,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B57515C62D60875D00768CBD /* Build configuration list for PBXProject "SpacedOut" */;
+			buildConfigurationList = B57515C62D60875D00768CBD /* Build configuration list for PBXProject "spacedOut" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -249,9 +256,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpacedOut/SpacedOut.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpacedOut/Preview Content\"";
+				DEVELOPMENT_TEAM = HY265X6WXX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -277,9 +286,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpacedOut/SpacedOut.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpacedOut/Preview Content\"";
+				DEVELOPMENT_TEAM = HY265X6WXX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -303,7 +314,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B57515C62D60875D00768CBD /* Build configuration list for PBXProject "SpacedOut" */ = {
+		B57515C62D60875D00768CBD /* Build configuration list for PBXProject "spacedOut" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B57515D72D60875E00768CBD /* Debug */,
