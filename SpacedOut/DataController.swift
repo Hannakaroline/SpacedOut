@@ -6,6 +6,7 @@
 //
 
 import CoreData
+import WidgetKit
 
 class DataController: ObservableObject {
     let container: NSPersistentContainer
@@ -26,4 +27,12 @@ class DataController: ObservableObject {
             }
         }
     }
+    
+    func save() {
+        if container.viewContext.hasChanges {
+            try? container.viewContext.save()
+            WidgetCenter.shared.reloadAllTimelines()
+        }
+    }
 }
+
