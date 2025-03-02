@@ -6,13 +6,77 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B568058A2D74188600E16B37 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56805892D74188600E16B37 /* WidgetKit.framework */; };
+		B568058C2D74188600E16B37 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568058B2D74188600E16B37 /* SwiftUI.framework */; };
+		B56805972D74188700E16B37 /* SpacedOutWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B56805872D74188600E16B37 /* SpacedOutWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B56805952D74188700E16B37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B57515C32D60875D00768CBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B56805862D74188600E16B37;
+			remoteInfo = SpacedOutWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B568059C2D74188700E16B37 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B56805972D74188700E16B37 /* SpacedOutWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B56805872D74188600E16B37 /* SpacedOutWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpacedOutWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56805892D74188600E16B37 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B568058B2D74188600E16B37 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B56805A12D74202300E16B37 /* SpacedOutWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpacedOutWidgetExtension.entitlements; sourceTree = "<group>"; };
 		B57515CB2D60875D00768CBD /* SpacedOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacedOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B56805982D74188700E16B37 /* Exceptions for "SpacedOutWidget" folder in "SpacedOutWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B56805862D74188600E16B37 /* SpacedOutWidgetExtension */;
+		};
+		B568059E2D741FCA00E16B37 /* Exceptions for "SpacedOut" folder in "SpacedOutWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CoreDataHelpers.swift,
+				DataController.swift,
+				Model.xcdatamodeld,
+			);
+			target = B56805862D74188600E16B37 /* SpacedOutWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		B568058D2D74188600E16B37 /* SpacedOutWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B56805982D74188700E16B37 /* Exceptions for "SpacedOutWidget" folder in "SpacedOutWidgetExtension" target */,
+			);
+			path = SpacedOutWidget;
+			sourceTree = "<group>";
+		};
 		B57515CD2D60875D00768CBD /* SpacedOut */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B568059E2D741FCA00E16B37 /* Exceptions for "SpacedOut" folder in "SpacedOutWidgetExtension" target */,
+			);
 			path = SpacedOut;
 			sourceTree = "<group>";
 		};
@@ -24,6 +88,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B56805842D74188600E16B37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B568058C2D74188600E16B37 /* SwiftUI.framework in Frameworks */,
+				B568058A2D74188600E16B37 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B57515C82D60875D00768CBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,11 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B56805882D74188600E16B37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B56805892D74188600E16B37 /* WidgetKit.framework */,
+				B568058B2D74188600E16B37 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B57515C22D60875D00768CBD = {
 			isa = PBXGroup;
 			children = (
+				B56805A12D74202300E16B37 /* SpacedOutWidgetExtension.entitlements */,
 				B57515CD2D60875D00768CBD /* SpacedOut */,
 				B57515E22D60901200768CBD /* Preview Content */,
+				B568058D2D74188600E16B37 /* SpacedOutWidget */,
+				B56805882D74188600E16B37 /* Frameworks */,
 				B57515CC2D60875D00768CBD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				B57515CB2D60875D00768CBD /* SpacedOut.app */,
+				B56805872D74188600E16B37 /* SpacedOutWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +140,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B56805862D74188600E16B37 /* SpacedOutWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B56805992D74188700E16B37 /* Build configuration list for PBXNativeTarget "SpacedOutWidgetExtension" */;
+			buildPhases = (
+				B56805832D74188600E16B37 /* Sources */,
+				B56805842D74188600E16B37 /* Frameworks */,
+				B56805852D74188600E16B37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B568058D2D74188600E16B37 /* SpacedOutWidget */,
+			);
+			name = SpacedOutWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = SpacedOutWidgetExtension;
+			productReference = B56805872D74188600E16B37 /* SpacedOutWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		B57515CA2D60875D00768CBD /* SpacedOut */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B57515D92D60875E00768CBD /* Build configuration list for PBXNativeTarget "SpacedOut" */;
@@ -61,10 +169,12 @@
 				B57515C72D60875D00768CBD /* Sources */,
 				B57515C82D60875D00768CBD /* Frameworks */,
 				B57515C92D60875D00768CBD /* Resources */,
+				B568059C2D74188700E16B37 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B56805962D74188700E16B37 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				B57515CD2D60875D00768CBD /* SpacedOut */,
@@ -87,6 +197,9 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					B56805862D74188600E16B37 = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					B57515CA2D60875D00768CBD = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -107,11 +220,19 @@
 			projectRoot = "";
 			targets = (
 				B57515CA2D60875D00768CBD /* SpacedOut */,
+				B56805862D74188600E16B37 /* SpacedOutWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B56805852D74188600E16B37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B57515C92D60875D00768CBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,6 +243,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B56805832D74188600E16B37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B57515C72D60875D00768CBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,7 +259,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B56805962D74188700E16B37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B56805862D74188600E16B37 /* SpacedOutWidgetExtension */;
+			targetProxy = B56805952D74188700E16B37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		B568059A2D74188700E16B37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SpacedOutWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HY265X6WXX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpacedOutWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpacedOutWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hanna.SpacedOut.SpacedOutWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B568059B2D74188700E16B37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SpacedOutWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HY265X6WXX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpacedOutWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpacedOutWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hanna.SpacedOut.SpacedOutWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B57515D72D60875E00768CBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -314,6 +506,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B56805992D74188700E16B37 /* Build configuration list for PBXNativeTarget "SpacedOutWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B568059A2D74188700E16B37 /* Debug */,
+				B568059B2D74188700E16B37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B57515C62D60875D00768CBD /* Build configuration list for PBXProject "spacedOut" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
